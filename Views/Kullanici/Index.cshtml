@@ -1,0 +1,14 @@
+﻿@model WebProgramlamaProje.Models.Kullanici
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Hoşgeldin @Model.Ad</h2>
+
+<p>Yazılan Makale Sayısı :@Model.Makales.Count</p>
+
+@Html.ActionLink("Makale Yaz","Create","Makale") |
+@Html.ActionLink("Makaleleri Listele","KisiMakaleListele","Makale")
+
